@@ -1,0 +1,141 @@
+.rootcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background for better contrast */
+  
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  height: 90%;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.totalprice {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  padding: 2rem;
+  border-right: 2px solid #dee2e6; /* Subtle border to separate sections */
+}
+
+.totalprice h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.totalprice p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.totalprice button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.totalprice button:hover {
+  background-color: #0056b3;
+}
+
+.productlist {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 2rem;
+  max-height: 80vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.productlist h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.productItem {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.productImage {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productActions {
+  display: flex;
+  align-items: center;
+}
+
+.productActions button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.productdetails {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30rem;
+  text-align: left;
+}
+
+.productdetails button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.productdetails button:hover {
+  background-color: #0056b3;
+}
+
+.productdescription {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}

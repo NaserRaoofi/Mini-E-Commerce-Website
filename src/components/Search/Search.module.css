@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 4rem;
+    background-color: black;
+    
+ 
+}
+.midcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+}
+.appcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0;
+    color: white;
+}
+a{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .searchInput {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  .searchInput::placeholder {
+    color: #aaa;
+  }
+  
+  .searchButton {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+  
+  .searchButton svg {
+    fill: #fff;
+  }
+  
+  .searchButton:hover {
+    background-color: #45a049;
+  }
+  
+  .searchButton:active {
+    background-color: #3e8e41;
+  
+  }
+  .searchButton:focus {
+    outline: none; /* Ensure outline is removed */
+  }
+  
+  .searchButton:focus-visible {
+    outline: none; /* Ensure outline is removed for focus-visible */
+  }

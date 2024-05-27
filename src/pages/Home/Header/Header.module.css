@@ -1,0 +1,80 @@
+
+.header {
+    width: 100vw;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoImage {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .sloganContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #0073b1; /* Use a brand color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sloganText {
+    font-size: 16px;
+    color: #fff; /* White text for contrast */
+    font-weight: 600;
+    text-align: center;
+  }
+
+.marquee {
+  padding: 10px;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #fff; /* Start with white */
+  }
+  25% {
+    color: #f39c12; /* Yellow */
+  }
+  50% {
+    color: #e74c3c; /* Red */
+  }
+  75% {
+    color: #8e44ad; /* Purple */
+  }
+  100% {
+    color: #3498db; /* Blue */
+  }
+}
+
+.marquee span {
+  color: #fff; /* White text for the marquee */
+  font-size: 24px;
+  font-weight: bold;
+  animation: colorChange 4s linear infinite; /* Add the color change animation */
+}
